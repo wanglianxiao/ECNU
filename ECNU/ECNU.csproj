@@ -161,6 +161,7 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Modules\BasicAuthHttpModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

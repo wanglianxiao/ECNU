@@ -20,7 +20,6 @@ namespace ECNU.Controllers
         // GET: api/StudentAPI
         //public IQueryable<Student> GetStudents()
         //[HttpGet]
-        //[ActionName("stu")]
         public IEnumerable<Student> Get()
         {
             return db.Students.ToArray();
@@ -75,6 +74,7 @@ namespace ECNU.Controllers
         }
 
         // post: api/studentapi
+        [Authorize]
         [ResponseType(typeof(Student))]
         public IHttpActionResult poststudent(Student student)
         {
