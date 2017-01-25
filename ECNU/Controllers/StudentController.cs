@@ -14,11 +14,13 @@ namespace ECNU.Controllers
     public class StudentController : Controller
     {
         private SchoolContext db = new SchoolContext();
+        private StudentAPIController apicon = new StudentAPIController();
 
         // GET: Student
         public ActionResult Index()
         {
             return View(db.Students.ToList());
+            ////return View(apicon.Get().ToList());
         }
 
         // GET: Student/Details/5
